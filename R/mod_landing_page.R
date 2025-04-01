@@ -100,7 +100,7 @@ border: 1px solid #666666}
           "Click the button in the top-right corner of each box to expand or collapse its contents.",
           "</p>",
           "</p>",
-          "<p style='font-size: small; text-align: right;margin-top:-10px'>", "Version 1.2.0 (2025-03-20)",
+          "<p style='font-size: small; text-align: right;margin-top:-10px'>", "Version 1.2.1 (2025-03-31)",
           "</p>"
         ))
     ),

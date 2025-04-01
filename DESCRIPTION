@@ -1,7 +1,7 @@
 Package: sae4health
 Title: Small Area Estimation for Key Health and Demographic Indicators
         from Household Surveys
-Version: 1.2.0
+Version: 1.2.1
 Authors@R: c(
     person(given = "Yunhan", family = "Wu", email= "wu-thomas@outlook.com", role = c("cre", "aut")),
     person(given = "Qianyu", family = "Dong", email= "qdong14@ucsc.edu", role = "aut"),
@@ -30,11 +30,11 @@ NeedsCompilation: no
 Config/build/clean-inst-doc: FALSE
 Config/testthat/edition: 3
 Language: en-US
-Packaged: 2025-03-26 20:16:41 UTC; wu-th
+Packaged: 2025-04-01 01:34:29 UTC; wu-th
 Author: Yunhan Wu [cre, aut],
   Qianyu Dong [aut],
   Zehang R Li [aut],
   Jon Wakefield [aut]
 Maintainer: Yunhan Wu <wu-thomas@outlook.com>
 Repository: CRAN
-Date/Publication: 2025-03-28 18:20:01 UTC
+Date/Publication: 2025-04-01 06:50:02 UTC
