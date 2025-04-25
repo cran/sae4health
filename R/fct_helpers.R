@@ -25,6 +25,7 @@ CountryInfo <- R6::R6Class(
     WHO_version = NULL, ### whether to use WHO version of the app (difference in countries)
     shapefile_source = NULL, ### WHO-preload, WHO-download, GADM-preload, GADM-download
 
+    server_version = NULL, ### whether this is a version deployed on the server
     legend_color_reverse = NULL, ### whether to reverse the color scheme on the legend of leaflet plot (fix bug)
 
     country = NULL,
@@ -67,6 +68,7 @@ CountryInfo <- R6::R6Class(
       self$WHO_version <- reactiveVal(NULL)
       self$shapefile_source <- reactiveVal(NULL)
 
+      self$server_version <- reactiveVal(F)
       self$legend_color_reverse <- reactiveVal(NULL)
 
       self$country <- reactiveVal(NULL)
@@ -214,7 +216,8 @@ AnalysisInfo <- R6::R6Class(
       self$model_res_list <- reactiveVal(NULL)
       self$model_res_tracker_list <- reactiveVal(NULL)
 
-      self$ad_options_list <-  reactiveVal(list(nested=F))
+      self$ad_options_list <-  reactiveVal(list(nested=F,
+                                                adm_cov_list = NULL))
 
     },
 
@@ -231,6 +234,8 @@ AnalysisInfo <- R6::R6Class(
       self$Natl_res(NULL)
       self$model_res_list(NULL)
       self$model_res_tracker_list(NULL)
+
+      self$ad_options_list(list(nested=F,adm_cov_list = NULL))
 
     },
 
